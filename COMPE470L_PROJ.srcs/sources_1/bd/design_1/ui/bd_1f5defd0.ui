@@ -1,0 +1,83 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1030 -y 620 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1030 -y 650 -defaultsOSRD
+preplace port PL_LED_G_0 -pg 1 -lvl 4 -x 1030 -y 830 -defaultsOSRD
+preplace port PL_LED_R_0 -pg 1 -lvl 4 -x 1030 -y 860 -defaultsOSRD
+preplace port ARDUINO_A1_0 -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port ARDUINO_A0_0 -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port ARDUINO_A2_0 -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port ARDUINO_IO6_0 -pg 1 -lvl 4 -x 1030 -y 470 -defaultsOSRD
+preplace port ARDUINO_IO10_0 -pg 1 -lvl 4 -x 1030 -y 500 -defaultsOSRD
+preplace port ARDUINO_IO11_0 -pg 1 -lvl 4 -x 1030 -y 530 -defaultsOSRD
+preplace port ARDUINO_IO12_0 -pg 1 -lvl 4 -x 1030 -y 560 -defaultsOSRD
+preplace port ARDUINO_IO13_0 -pg 1 -lvl 4 -x 1030 -y 590 -defaultsOSRD
+preplace port PMOD1_D1_P_0 -pg 1 -lvl 4 -x 1030 -y 20 -defaultsOSRD
+preplace port PMOD1_D3_N_0 -pg 1 -lvl 4 -x 1030 -y 50 -defaultsOSRD
+preplace port PMOD2_D1_N_0 -pg 1 -lvl 4 -x 1030 -y 80 -defaultsOSRD
+preplace port PMOD2_D0_P_0 -pg 1 -lvl 4 -x 1030 -y 110 -defaultsOSRD
+preplace port PMOD1_D0_N_0 -pg 1 -lvl 4 -x 1030 -y 170 -defaultsOSRD
+preplace port PMOD2_D1_P_0 -pg 1 -lvl 4 -x 1030 -y 140 -defaultsOSRD
+preplace port PMOD2_D0_N_0 -pg 1 -lvl 4 -x 1030 -y 200 -defaultsOSRD
+preplace port ARDUINO_IO3_0 -pg 1 -lvl 4 -x 1030 -y 380 -defaultsOSRD
+preplace port ARDUINO_IO4_0 -pg 1 -lvl 4 -x 1030 -y 410 -defaultsOSRD
+preplace port PMOD1_D0_P_0 -pg 1 -lvl 4 -x 1030 -y 230 -defaultsOSRD
+preplace port PMOD1_D1_N_0 -pg 1 -lvl 4 -x 1030 -y 260 -defaultsOSRD
+preplace port ARDUINO_IO0_0 -pg 1 -lvl 4 -x 1030 -y 290 -defaultsOSRD
+preplace port ARDUINO_IO1_0 -pg 1 -lvl 4 -x 1030 -y 320 -defaultsOSRD
+preplace port ARDUINO_IO2_0 -pg 1 -lvl 4 -x 1030 -y 350 -defaultsOSRD
+preplace port ARDUINO_IO5_0 -pg 1 -lvl 4 -x 1030 -y 440 -defaultsOSRD
+preplace port ARDUINO_IO8_0 -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 720 -y 690 -defaultsOSRD
+preplace inst VAL_0 -pg 1 -lvl 3 -x 720 -y 300 -defaultsOSRD
+preplace inst BTNS_0 -pg 1 -lvl 1 -x 150 -y 340 -defaultsOSRD
+preplace inst MAIN_LOGIC_0 -pg 1 -lvl 2 -x 380 -y 330 -defaultsOSRD
+preplace netloc MAIN_LOGIC_0_DB_CLK 1 0 3 40 190 NJ 190 500
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 260 30 NJ 30 870
+preplace netloc BTNS_0_b0 1 1 1 N 310
+preplace netloc BTNS_0_b1 1 1 1 N 330
+preplace netloc BTNS_0_b2 1 1 1 N 350
+preplace netloc BTNS_0_b3 1 1 1 N 370
+preplace netloc MAIN_LOGIC_0_PL_LED_G 1 2 2 510J 40 980J
+preplace netloc MAIN_LOGIC_0_PL_LED_R 1 2 2 520J 50 930J
+preplace netloc ARDUINO_A1_0_1 1 0 1 20J 320n
+preplace netloc ARDUINO_A0_0_1 1 0 1 30J 290n
+preplace netloc ARDUINO_A2_0_1 1 0 1 30J 350n
+preplace netloc MAIN_LOGIC_0_DRIVE2 1 2 1 530 270n
+preplace netloc MAIN_LOGIC_0_DRIVE4 1 2 1 540 290n
+preplace netloc MAIN_LOGIC_0_LFSR_FINAL 1 2 1 550 310n
+preplace netloc MAIN_LOGIC_0_USER_IN 1 2 1 560 330n
+preplace netloc VAL_0_ARDUINO_IO6 1 3 1 920J 410n
+preplace netloc VAL_0_ARDUINO_IO10 1 3 1 910J 430n
+preplace netloc VAL_0_ARDUINO_IO11 1 3 1 900J 450n
+preplace netloc VAL_0_ARDUINO_IO12 1 3 1 890J 470n
+preplace netloc VAL_0_ARDUINO_IO13 1 3 1 880J 490n
+preplace netloc VAL_0_PMOD1_D1_P 1 3 1 920J 20n
+preplace netloc VAL_0_PMOD1_D3_N 1 3 1 940J 50n
+preplace netloc VAL_0_PMOD2_D1_N 1 3 1 950J 80n
+preplace netloc VAL_0_PMOD2_D0_P 1 3 1 960J 110n
+preplace netloc VAL_0_PMOD1_D0_N 1 3 1 990J 170n
+preplace netloc VAL_0_PMOD2_D1_P 1 3 1 970J 140n
+preplace netloc VAL_0_PMOD2_D0_N 1 3 1 1000J 200n
+preplace netloc VAL_0_ARDUINO_IO3 1 3 1 1000J 350n
+preplace netloc VAL_0_ARDUINO_IO4 1 3 1 990J 370n
+preplace netloc VAL_0_PMOD1_D0_P 1 3 1 1010J 230n
+preplace netloc VAL_0_PMOD1_D1_N 1 3 1 1010J 260n
+preplace netloc VAL_0_ARDUINO_IO0 1 3 1 NJ 290
+preplace netloc VAL_0_ARDUINO_IO1 1 3 1 1010J 310n
+preplace netloc VAL_0_ARDUINO_IO2 1 3 1 1010J 330n
+preplace netloc VAL_0_ARDUINO_IO5 1 3 1 950J 390n
+preplace netloc MAIN_LOGIC_0_state 1 2 1 N 250
+preplace netloc MAIN_LOGIC_0_SEED 1 2 1 570 350n
+preplace netloc ARDUINO_IO8_0_1 1 0 1 N 380
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 650
+preplace netloc processing_system7_0_DDR 1 3 1 1010J 620n
+levelinfo -pg 1 0 150 380 720 1030
+pagesize -pg 1 -db -bbox -sgen -160 0 1200 880
+"
+}
+{
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 15 11:57:25 2019
+# Process ID: 13776
+# Current directory: C:/Users/uldrensov/Desktop/COMPE470L_PROJ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2844 C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.xpr
+# Log file: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/vivado.log
+# Journal file: C:/Users/uldrensov/Desktop/COMPE470L_PROJ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1043.195 ; gain = 171.320
+update_compile_order -fileset sources_1
+update_module_reference design_1_VAL_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:BTNS:1.0 - BTNS_0
+Adding component instance block -- xilinx.com:module_ref:VAL:1.0 - VAL_0
+Adding component instance block -- xilinx.com:module_ref:MAIN_LOGIC:1.0 - MAIN_LOGIC_0
+Successfully read diagram <design_1> from BD file <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_VAL_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SEED'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'state'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_VAL_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_VAL_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1043.195 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1043.195 ; gain = 0.000
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SEED'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'state'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_MAIN_LOGIC_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_MAIN_LOGIC_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+connect_bd_net [get_bd_pins MAIN_LOGIC_0/state] [get_bd_pins VAL_0/state]
+endgroup
+connect_bd_net [get_bd_pins MAIN_LOGIC_0/SEED] [get_bd_pins VAL_0/SEED]
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+save_bd_design
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 13:48:18 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1, design_1_VAL_0_0_synth_1...
+Run output will be captured here:
+design_1_MAIN_LOGIC_0_1_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+design_1_VAL_0_0_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_VAL_0_0_synth_1/runme.log
+[Fri Nov 15 13:48:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1052.242 ; gain = 9.047
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 13:49:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 13:51:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 15 13:52:30 2019...
