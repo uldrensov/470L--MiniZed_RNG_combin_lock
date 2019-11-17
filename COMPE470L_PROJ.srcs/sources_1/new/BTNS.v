@@ -33,7 +33,7 @@ module BTNS(input DB_CLK,
             pressed0 <= 0; //reset flag if unpressed
             b0 <= 0;
         end
-        else if (ARDUINO_A0 && !pressed0) begin //detect press only if previously unpressed (prevents button-hold)
+        else if (ARDUINO_A0 && !pressed0) begin //execute this block once per press
             pressed0 <= 1;
             b0 <= 1;
         end

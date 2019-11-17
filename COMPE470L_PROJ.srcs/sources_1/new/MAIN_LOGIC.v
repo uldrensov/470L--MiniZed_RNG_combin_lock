@@ -35,7 +35,8 @@ module MAIN_LOGIC(input CLK,
         PL_LED_G = 0; PL_LED_R = 0;
         LFSR_FINAL = 41;
     end
-        
+    
+    
     reg[22:0] db_tick = 0;
         reg[22:0] db_tickmax = 23'b100_1100_0100_1011_0100_0000; //5M
     reg[18:0] drive_tick = 0;
@@ -44,10 +45,10 @@ module MAIN_LOGIC(input CLK,
     reg[6:0] LFSR = 7'b0101001; //init = 41
         reg rng0, rng3, rng4; //0 = 0 XOR 1; 3 = 0 XOR 4; 4 = 0 XOR 5
         
-    reg[3:0] SEED0 = 0;
-    reg[3:0] SEED1 = 0;
-    reg[3:0] SEED2 = 0;
-    reg[3:0] SEED3 = 0;
+    reg[3:0] SEED0 = 1;
+    reg[3:0] SEED1 = 1;
+    reg[3:0] SEED2 = 1;
+    reg[3:0] SEED3 = 1;
     reg[3:0] USER_IN0 = 0;
     reg[3:0] USER_IN1 = 0;
     reg[3:0] USER_IN2 = 0;
@@ -57,6 +58,8 @@ module MAIN_LOGIC(input CLK,
     reg[3:0] SOLN; //RNG'd solution
         reg[3:0] L_tens, L_ones, greater, lesser;
         reg[3:0] modded, added, subbed, multed;
+        
+    reg ALLOW_LED = 0;
     
     
     //drive counters, calc/concat inputs and soln, drive onboard LEDs
@@ -68,18 +71,20 @@ module MAIN_LOGIC(input CLK,
             DB_CLK = ~DB_CLK;
         end
         
-        //7seg drive clock
+        //7seg drive
         drive_tick = drive_tick+1;
         if (drive_tick == drive_tickmax) begin
             drive_tick = 0;
-            DRIVE4 = DRIVE4+1; //always drive 4digit
+            DRIVE4 = DRIVE4+1; //drive 4digit in both modes
+            
+            //drive 2digit in active mode only
             if (state) begin
                 if (DRIVE2 != 0) DRIVE2 = 0; //un-"floats" if necessary
-                else DRIVE2 = 1; //drive 2digit only in active mode
+                else DRIVE2 = 1;
             end
         end
         
-        //ACTIVE: concat input for output, calc //concat soln in active mode, drive LEDs
+        //ACTIVE: calc soln, compare to input, drive LEDs where applicable
         if (state) begin
             //obtain tens-digit and one-digit of LFSR
             L_ones = LFSR_FINAL % 10;
@@ -91,22 +96,12 @@ module MAIN_LOGIC(input CLK,
             multed = (L_tens * L_ones) % SEED1;
             
             //determine solution digit 0
-            if (L_tens < L_ones) begin
-                lesser = L_tens;
-                greater = L_ones;
-            end
-            else begin //accounts for equal case as well
-                lesser = L_ones;
-                greater = L_tens;
-            end
+            lesser = (L_tens < L_ones)? L_tens:L_ones;
+            greater = (L_tens < L_ones)? L_ones:L_tens;
             subbed = (greater - lesser) % SEED0;
             
-            //finalised concats
-            SOLN = {modded, added, multed, subbed};
-            USER_IN = {USER_IN3, USER_IN2, USER_IN1, USER_IN0};
-            
             //show lock/unlock status via red/green LED
-            if (b2) begin
+            if (b2 && ALLOW_LED) begin
                 if ((USER_IN3 == modded) && (USER_IN2 == added) &&
                 (USER_IN1 == multed) && (USER_IN0 == subbed)) begin
                     //GREEN = SUCCESS
@@ -124,9 +119,12 @@ module MAIN_LOGIC(input CLK,
                 PL_LED_G = 0;
                 PL_LED_R = 0;
             end
+            
+        //ACTIVE: concat 4-digit user input for VAL module
+        USER_IN = {USER_IN3, USER_IN2, USER_IN1, USER_IN0};
         end
-        
-        //SETUP: concat seed for output during setup mode
+
+        //SETUP: concat 4-digit seed for VAL module
         else SEED = {SEED3, SEED2, SEED1, SEED0};
     end
     
@@ -137,10 +135,10 @@ module MAIN_LOGIC(input CLK,
     always @(posedge b1) begin
         if (!state) begin //set seed in setup mode
             case (dgt_sel)
-                0: SEED0 <= SEED0+1;
-                1: SEED1 <= SEED1+1;
-                2: SEED2 <= SEED2+1;
-                3: SEED3 <= SEED3+1;
+                0: SEED0 <= (SEED0 == 15)? 1:SEED0+1;
+                1: SEED1 <= (SEED1 == 15)? 1:SEED1+1;
+                2: SEED2 <= (SEED2 == 15)? 1:SEED2+1;
+                3: SEED3 <= (SEED3 == 15)? 1:SEED3+1;
             endcase
         end
         else begin //set input in active mode
@@ -156,6 +154,7 @@ module MAIN_LOGIC(input CLK,
     //button 2: confirm setup
     always @(posedge b2)
         if (!state) state <= 1; //one-way transition to active mode
+    always @(negedge b2) ALLOW_LED <= 1; //prevents onboard LED from activating on the first press of button 2
     
     //button 3: RNG
     always @(posedge b3) begin
@@ -169,8 +168,3 @@ module MAIN_LOGIC(input CLK,
         end
     end
 endmodule
-
-
-//TODO
-//dont allow seed to have any 0s
-//stop the initial press of btn2 from driving led

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Nov 15 21:43:25 2019
+| Date         : Sat Nov 16 23:10:35 2019
 | Host         : DESKTOP-SP15L6C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    19 |
-|    Minimum number of control sets                        |    19 |
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    59 |
+| Unused register locations in slices containing registers |    66 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    19 |
-| >= 0 to < 4        |     2 |
+| Total control sets |    20 |
+| >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     9 |
 | >= 6 to < 8        |     3 |
 | >= 8 to < 10       |     1 |
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           14 |
+| No           | No                    | No                     |              34 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              42 |           11 |
-| Yes          | No                    | No                     |              70 |           31 |
+| Yes          | No                    | No                     |              66 |           31 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -74,22 +74,23 @@ Table of Contents
 |                     Clock Signal                     |                 Enable Signal                 |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
 +------------------------------------------------------+-----------------------------------------------+----------------------------------------------------+------------------+----------------+
 |  design_1_i/BTNS_0/inst/b2                           |                                               |                                                    |                1 |              1 |
+| ~design_1_i/BTNS_0/inst/b2                           |                                               |                                                    |                1 |              1 |
 |  design_1_i/BTNS_0/inst/b0                           |                                               |                                                    |                1 |              2 |
-| ~design_1_i/MAIN_LOGIC_0/inst/DRIVE2[1]              |                                               |                                                    |                2 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED1[3]_i_1_n_0 |                                                    |                2 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED3[3]_i_1_n_0 |                                                    |                1 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN1         |                                                    |                1 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           |                                               |                                                    |                2 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED0[3]_i_1_n_0 |                                                    |                3 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED2[3]_i_1_n_0 |                                                    |                3 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED1[3]_i_1_n_0 |                                                    |                1 |              4 |
 |  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN0         |                                                    |                1 |              4 |
 |  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN3         |                                                    |                1 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED2[3]_i_1_n_0 |                                                    |                2 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/SEED0[3]_i_1_n_0 |                                                    |                2 |              4 |
-|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN2         |                                                    |                1 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN1         |                                                    |                1 |              4 |
+|  design_1_i/BTNS_0/inst/b1                           | design_1_i/MAIN_LOGIC_0/inst/USER_IN2         |                                                    |                2 |              4 |
+| ~design_1_i/MAIN_LOGIC_0/inst/DRIVE2[1]              |                                               |                                                    |                2 |              4 |
 |  design_1_i/BTNS_0/inst/b3                           | design_1_i/MAIN_LOGIC_0/inst/state_reg_0      |                                                    |                3 |              6 |
-|  design_1_i/processing_system7_0/inst/FCLK_CLK0      |                                               |                                                    |                4 |              7 |
-|  design_1_i/VAL_0/inst/PMOD2_D1_N_inferred__0/i__n_0 |                                               |                                                    |                3 |              7 |
-|  design_1_i/MAIN_LOGIC_0/inst/DB_CLK                 |                                               |                                                    |                3 |              8 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0      |                                               |                                                    |                3 |              7 |
+|  design_1_i/VAL_0/inst/PMOD2_D1_N_inferred__0/i__n_0 |                                               |                                                    |                2 |              7 |
+|  design_1_i/MAIN_LOGIC_0/inst/DB_CLK                 |                                               |                                                    |                2 |              8 |
 |  design_1_i/processing_system7_0/inst/FCLK_CLK0      | design_1_i/MAIN_LOGIC_0/inst/SEED[15]_i_1_n_0 |                                                    |                8 |             16 |
-|  design_1_i/processing_system7_0/inst/FCLK_CLK0      | design_1_i/MAIN_LOGIC_0/inst/state_reg_0      |                                                    |                9 |             16 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0      | design_1_i/MAIN_LOGIC_0/inst/state_reg_0      |                                                    |                8 |             16 |
 |  design_1_i/processing_system7_0/inst/FCLK_CLK0      |                                               | design_1_i/MAIN_LOGIC_0/inst/drive_tick[0]_i_1_n_0 |                5 |             19 |
 |  design_1_i/processing_system7_0/inst/FCLK_CLK0      |                                               | design_1_i/MAIN_LOGIC_0/inst/clear                 |                6 |             23 |
 +------------------------------------------------------+-----------------------------------------------+----------------------------------------------------+------------------+----------------+

@@ -1,0 +1,1049 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 15 15:17:58 2019
+# Process ID: 5876
+# Current directory: C:/Users/uldrensov/Desktop/COMPE470L_PROJ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10996 C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.xpr
+# Log file: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/vivado.log
+# Journal file: C:/Users/uldrensov/Desktop/COMPE470L_PROJ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 762.223 ; gain = 124.027
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2023.559 ; gain = 1113.379
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+current_hw_device [get_hw_devices xc7z007s_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1435] Device xc7z007s (JTAG device index = 1) is not programmed (DONE status = 0).
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z007s (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z007s (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z007s_1 and the probes file(s) .
+The device design has 2 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z007s (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z007s (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z007s_1 and the probes file(s) .
+The device design has 2 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:BTNS:1.0 - BTNS_0
+Adding component instance block -- xilinx.com:module_ref:VAL:1.0 - VAL_0
+Adding component instance block -- xilinx.com:module_ref:MAIN_LOGIC:1.0 - MAIN_LOGIC_0
+Successfully read diagram <design_1> from BD file <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2127.121 ; gain = 79.773
+update_module_reference: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2127.121 ; gain = 79.773
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 15:50:17 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 15:50:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2236.324 ; gain = 109.203
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 15:52:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 15:53:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 17:04:40 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 17:04:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2288.477 ; gain = 23.164
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 17:07:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Netlist 29-17] Analyzing 139 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 3093.391 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 3093.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3093.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 3211.738 ; gain = 919.391
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_BTNS_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_BTNS_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ARDUINO_A3'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'ARDUINO_IO8'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_BTNS_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'ARDUINO_A3' is not found on the upgraded version of the cell '/BTNS_0'. Its connection to the net 'ARDUINO_A3_0_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_BTNS_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/BTNS_0/ARDUINO_IO8
+
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 17:17:31 2019] Launched design_1_BTNS_0_0_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1/runme.log
+[Fri Nov 15 17:17:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+reset_run design_1_BTNS_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1
+
+delete_bd_objs [get_bd_nets ARDUINO_A3_0_1] [get_bd_ports ARDUINO_A3_0]
+startgroup
+make_bd_pins_external  [get_bd_pins BTNS_0/ARDUINO_IO8]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 17:18:38 2019] Launched design_1_BTNS_0_0_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1/runme.log
+[Fri Nov 15 17:18:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 3331.219 ; gain = 35.199
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 17:20:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+open_bd_design {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Nov 15 17:28:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 17:29:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 17:30:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z007s (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z007s_1 and the probes file(s) .
+The device design has 2 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_VAL_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_VAL_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_VAL_0_0 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_BTNS_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_BTNS_0_0 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 18:15:52 2019] Launched design_1_VAL_0_0_synth_1, design_1_BTNS_0_0_synth_1, design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here:
+design_1_VAL_0_0_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_VAL_0_0_synth_1/runme.log
+design_1_BTNS_0_0_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1/runme.log
+design_1_MAIN_LOGIC_0_1_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 18:15:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3427.969 ; gain = 22.383
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 18:17:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 18:19:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 18:30:10 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 18:30:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3464.691 ; gain = 22.348
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 18:32:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3479.047 ; gain = 10.785
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 18:38:13 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 18:38:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3501.633 ; gain = 22.586
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 18:41:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 18:42:57 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_BTNS_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_BTNS_0_0 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 20:21:31 2019] Launched design_1_BTNS_0_0_synth_1, design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here:
+design_1_BTNS_0_0_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_BTNS_0_0_synth_1/runme.log
+design_1_MAIN_LOGIC_0_1_synth_1: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 20:21:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 3539.199 ; gain = 22.477
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 20:23:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 20:25:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z007s (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z007s_1 and the probes file(s) .
+The device design has 2 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 3553.773 ; gain = 1.121
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 20:47:28 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 20:47:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3576.383 ; gain = 22.609
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 20:48:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 20:50:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 20:56:36 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 20:56:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3612.746 ; gain = 22.676
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 20:58:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:00:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 21:04:47 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 21:04:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3649.523 ; gain = 22.426
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 21:06:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:07:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3665.605 ; gain = 12.359
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 21:11:50 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 21:11:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3687.945 ; gain = 22.340
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 21:13:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:15:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 21:20:04 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 21:20:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3741.414 ; gain = 36.629
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 21:21:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:23:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3755.430 ; gain = 10.645
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 21:32:17 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 21:32:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3777.840 ; gain = 22.410
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 21:34:49 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:36:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1
+
+update_module_reference design_1_MAIN_LOGIC_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DB_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'DB_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'DB_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_MAIN_LOGIC_0_1 to use current project options
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3791.805 ; gain = 10.289
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-927] Following properties on pin /BTNS_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /MAIN_LOGIC_0/DB_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_MAIN_LOGIC_0_1_DB_CLK 
+Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_PROJ\COMPE470L_PROJ.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VAL_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BTNS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MAIN_LOGIC_0 .
+Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Nov 15 21:41:12 2019] Launched design_1_MAIN_LOGIC_0_1_synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_MAIN_LOGIC_0_1_synth_1/runme.log
+[Fri Nov 15 21:41:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3814.152 ; gain = 22.348
+launch_runs impl_1 -jobs 4
+[Fri Nov 15 21:42:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 15 21:43:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 15 21:51:39 2019...

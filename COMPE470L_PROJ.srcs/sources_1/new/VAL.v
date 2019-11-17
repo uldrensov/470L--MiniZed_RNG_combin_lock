@@ -27,7 +27,7 @@ module VAL(input state, input[1:0] digit2, digit4, input[6:0] LFSR_FINAL, input[
     ARDUINO_IO0, ARDUINO_IO1, ARDUINO_IO2, ARDUINO_IO3, ARDUINO_IO4, ARDUINO_IO5, ARDUINO_IO6,
     ARDUINO_IO10, ARDUINO_IO11, ARDUINO_IO12, ARDUINO_IO13);
     //PMOD outputs, in order:
-        //top row: 2digit LSB drive, 2digit MSB drive
+        //top row: 2digit LSdigit drive, 2digit MSdigit drive
         //bot row: 2digit A-G cathode drives
     //ARDUINO_IO outputs, in order:
         //top row: 4digit A-G cathode drives
@@ -135,68 +135,68 @@ module VAL(input state, input[1:0] digit2, digit4, input[6:0] LFSR_FINAL, input[
     always @(val4) begin
         case (val4)
             0:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 1;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 1;
             end
             1:begin
-                ARDUINO_IO4 = 1; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 1;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 1; ARDUINO_IO3 = 1;
+                ARDUINO_IO4 <= 1; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 1;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 1; ARDUINO_IO3 <= 1;
             end
             2:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 1; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 1; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 1; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 1; ARDUINO_IO3 <= 0;
             end
             3:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 1; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 1; ARDUINO_IO3 <= 0;
             end
             4:begin
-                ARDUINO_IO4 = 1; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 1;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 1; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 1;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             5:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 1; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             6:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 1; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             7:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 1;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 1; ARDUINO_IO3 = 1;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 1;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 1; ARDUINO_IO3 <= 1;
             end
             8:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             9:begin
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 1; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 1; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             10:begin //A
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 1;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 1;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             11:begin //B
-                ARDUINO_IO4 = 1; ARDUINO_IO2 = 1; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 1; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             12:begin //C
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 1; ARDUINO_IO1 = 1; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 1;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 1; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 1;
             end
             13:begin //D
-                ARDUINO_IO4 = 1; ARDUINO_IO2 = 0; ARDUINO_IO1 = 0; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 1; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 1; ARDUINO_IO2 <= 0; ARDUINO_IO1 <= 0; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 1; ARDUINO_IO3 <= 0;
             end
             14:begin //E
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 1; ARDUINO_IO1 = 1; ARDUINO_IO0 = 0;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 1; ARDUINO_IO0 <= 0;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
             15:begin //F
-                ARDUINO_IO4 = 0; ARDUINO_IO2 = 1; ARDUINO_IO1 = 1; ARDUINO_IO0 = 1;
-                ARDUINO_IO5 = 0; ARDUINO_IO6 = 0; ARDUINO_IO3 = 0;
+                ARDUINO_IO4 <= 0; ARDUINO_IO2 <= 1; ARDUINO_IO1 <= 1; ARDUINO_IO0 <= 1;
+                ARDUINO_IO5 <= 0; ARDUINO_IO6 <= 0; ARDUINO_IO3 <= 0;
             end
         endcase
     end

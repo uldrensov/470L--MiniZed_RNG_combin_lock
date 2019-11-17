@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov 15 18:15:54 2019
-# Process ID: 3184
+# Start of session at: Sat Nov 16 23:07:56 2019
+# Process ID: 5348
 # Current directory: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_VAL_0_0_synth_1
 # Command line: vivado.exe -log design_1_VAL_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_VAL_0_0.tcl
 # Log file: C:/Users/uldrensov/Desktop/COMPE470L_PROJ/COMPE470L_PROJ.runs/design_1_VAL_0_0_synth_1/design_1_VAL_0_0.vds
